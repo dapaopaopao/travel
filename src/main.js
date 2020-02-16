@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import './assets/reset.css'
 import './assets/border.css'
+import './assets/iconfont.css'
 import fastClick from 'fastclick'
 import router from './router'
 
