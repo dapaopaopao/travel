@@ -7,7 +7,7 @@
       <span class="iconfont">&#xe632;搜索</span>
     </div>
     <div class="header-right">
-      城市
+      {{this.city}}
       <span class="iconfont">&#xe62d;</span>
     </div>
   </div>
@@ -15,7 +15,10 @@
 
 <script>
 export default {
-  name: 'HomeHeader'
+  name: 'HomeHeader',
+  props: {
+    city: String
+  }
 }
 </script>
 
@@ -47,5 +50,7 @@ export default {
   float: right;
   width: 1.24rem;
   text-align: center;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
 }
 </style>

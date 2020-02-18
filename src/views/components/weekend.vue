@@ -2,12 +2,12 @@
   <div>
     <div class="title">周末去哪儿</div>
     <ul>
-      <li class="item" v-for="item of recommendList" :key="item.id">
+      <li class="item" v-for="item of weekendList" :key="item.id">
         <div class="item-img-wrapper">
-          <img class="item-img" :src="item.recommendUrl" />
+          <img class="item-img" :src="item.imgUrl" />
         </div>
         <div class="item-info">
-          <p class="item-title">{{item.info}}</p>
+          <p class="item-title">{{item.title}}</p>
           <p class="item-desc">{{item.desc}}</p>
         </div>
       </li>
@@ -18,25 +18,11 @@
 <script>
 export default {
   name: 'HomeReWeekend',
+  props: {
+    weekendList: Array
+  },
   data() {
-    return {
-      recommendList: [
-        {
-          id: '1',
-          recommendUrl:
-            '//imgs.qunarzz.com/vc/24/36/10/3fc94d042ae62de380581d4c98.jpg_92.jpg',
-          desc: '上海',
-          info: '上海'
-        },
-        {
-          id: '2',
-          recommendUrl:
-            '//imgs.qunarzz.com/vc/6d/9f/35/b8ad5468f73fd60ec0ced086f6.jpg_92.jpg',
-          desc: '东京',
-          info: '东京'
-        }
-      ]
-    }
+    return {}
   }
 }
 </script>
@@ -48,13 +34,12 @@ export default {
   line-height: 0.8rem;
   background: #eee;
   text-indent: 0.2rem;
-  margin-top: 0.1rem;
 }
 
 .item-img-wrapper {
   width: 100%;
   height: 0;
-  padding-bottom: 30.5%;
+  padding-bottom: 37.09%;
   overflow: hidden;
 }
 

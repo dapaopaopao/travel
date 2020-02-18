@@ -16,56 +16,11 @@
 <script>
 export default {
   name: 'HomeIcon',
+  props: {
+    iconList: Array
+  },
   data() {
-    return {
-      iconList: [
-        {
-          id: '001',
-          imgUrl: '//s.qunarzz.com/homenode/images/touchheader/hotel.png',
-          desc: '酒店'
-        },
-        {
-          id: '002',
-          imgUrl: '//s.qunarzz.com/homenode/images/touchheader/hotel.png',
-          desc: '饭店'
-        },
-        {
-          id: '003',
-          imgUrl: '//s.qunarzz.com/homenode/images/touchheader/hotel.png',
-          desc: '酒店'
-        },
-        {
-          id: '004',
-          imgUrl: '//s.qunarzz.com/homenode/images/touchheader/hotel.png',
-          desc: '酒店'
-        },
-        {
-          id: '005',
-          imgUrl: '//s.qunarzz.com/homenode/images/touchheader/hotel.png',
-          desc: '酒店'
-        },
-        {
-          id: '006',
-          imgUrl: '//s.qunarzz.com/homenode/images/touchheader/hotel.png',
-          desc: '酒店'
-        },
-        {
-          id: '007',
-          imgUrl: '//s.qunarzz.com/homenode/images/touchheader/hotel.png',
-          desc: '酒店'
-        },
-        {
-          id: '008',
-          imgUrl: '//s.qunarzz.com/homenode/images/touchheader/hotel.png',
-          desc: '酒店'
-        },
-        {
-          id: '009',
-          imgUrl: '//s.qunarzz.com/homenode/images/touchheader/hotel.png',
-          desc: '酒店'
-        }
-      ]
-    }
+    return {}
   },
   computed: {
     pages() {
