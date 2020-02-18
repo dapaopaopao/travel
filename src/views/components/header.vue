@@ -6,10 +6,12 @@
     <div class="header-mid">
       <span class="iconfont">&#xe632;搜索</span>
     </div>
-    <div class="header-right">
-      {{this.city}}
-      <span class="iconfont">&#xe62d;</span>
-    </div>
+    <router-link to="/city">
+      <div class="header-right">
+        {{this.city}}
+        <span class="iconfont">&#xe62d;</span>
+      </div>
+    </router-link>
   </div>
 </template>
 
@@ -52,5 +54,6 @@ export default {
   text-align: center;
   margin-left: 0.1rem;
   margin-right: 0.1rem;
+  color: #fff;
 }
 </style>

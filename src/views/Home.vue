@@ -40,7 +40,6 @@ export default {
       axios.get('/mock/index.json').then(this.getHomeInfoSuccb)
     },
     getHomeInfoSucca(res) {
-      console.log(res)
       res = res.data
       if (res.ret && res.data) {
         const data = res.data
@@ -48,7 +47,6 @@ export default {
       }
     },
     getHomeInfoSuccb(res) {
-      console.log(res)
       res = res.data
       if (res.ret && res.data) {
         const data = res.data
