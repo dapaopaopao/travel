@@ -1,7 +1,7 @@
 <template>
   <div>
     <CityHeader></CityHeader>
-    <CitySearch></CitySearch>
+    <CitySearch :cities="cities"></CitySearch>
     <CityList :hotCities="hotCities" :cities="cities" :letter="letter"></CityList>
     <CityAlphabet :cities="cities" @change="handleLetterChange"></CityAlphabet>
   </div>
@@ -28,6 +28,7 @@ export default {
       letter: ''
     }
   },
+  computed: {},
   methods: {
     getCityInfo() {
       axios.get('/mock/city.json').then(this.handleGetCityInfoSucc)
